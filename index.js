@@ -67,7 +67,16 @@ setInterval(() => {
   } else if (x(zoombie2) + VELOCIDAD_ZOOMBIE !== x(zoombie1)) {
     moverHaciaDerecha(zoombie2, VELOCIDAD_ZOOMBIE);
   }
+
   console.log('Zoombie2', x(zoombie2), y(zoombie2));
+
+  if (Math.abs(x(cajoncito) - x(zoombie2)) < 100 && Math.abs(y(cajoncito) - y(zoombie2)) < 100) {
+    console.log('ME COMEEEE ZOOOMBIE 2');
+    document.body.style.backgroundColor = 'red';
+    setTimeout(() => {
+      document.body.style.backgroundColor = 'white';
+    }, 100);
+  }
 }, 400);
 
 window.addEventListener('keydown', (ev) => {

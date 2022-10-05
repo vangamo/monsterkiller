@@ -21,9 +21,9 @@ const moverHaciaAbajo = (mob, distancia) => {
 };
 
 setInterval(() => {
-  if (y(cajoncito) < y(zoombie1)) {
+  if (y(cajoncito) < y(zoombie1) && y(zoombie1) - VELOCIDAD_ZOOMBIE !== y(zoombie2)) {
     moverHaciaArriba(zoombie1, VELOCIDAD_ZOOMBIE);
-  } else {
+  } else if (y(zoombie1) + VELOCIDAD_ZOOMBIE !== y(zoombie2)) {
     moverHaciaAbajo(zoombie1, VELOCIDAD_ZOOMBIE);
   }
   if (parseInt(cajoncito.style.left) < parseInt(zoombie1.style.left)) {
@@ -46,15 +46,16 @@ setInterval(() => {
 
 setInterval(() => {
   if (y(cajoncito) < y(zoombie2)) {
-    zoombie2.style.top = parseInt(zoombie2.style.top) - VELOCIDAD_ZOOMBIE;
+    moverHaciaArriba(zoombie2, VELOCIDAD_ZOOMBIE);
   } else {
-    zoombie2.style.top = parseInt(zoombie2.style.top) + VELOCIDAD_ZOOMBIE;
+    moverHaciaAbajo(zoombie2, VELOCIDAD_ZOOMBIE);
   }
   if (parseInt(cajoncito.style.left) < parseInt(zoombie2.style.left)) {
     zoombie2.style.left = parseInt(zoombie2.style.left) - VELOCIDAD_ZOOMBIE;
   } else {
     zoombie2.style.left = parseInt(zoombie2.style.left) + VELOCIDAD_ZOOMBIE;
   }
+  console.log('Zoombie2', x(zoombie2), y(zoombie2));
 }, 400);
 
 window.addEventListener('keydown', (ev) => {

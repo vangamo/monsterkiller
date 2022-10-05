@@ -13,4 +13,6 @@
 - [ ] tecla v que juegen al virus
 - [ ] tecla p  que juegen al piedra papel o tijera
   - [ ] si ganas te dan dos doblones de oro
-- [ ] colgar en internet
+- [X] colgar en internet
+- [ ] que no se pongan un zoombie encima del otro
+- [ ] que se pueda jugar desde el móvil

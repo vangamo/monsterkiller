@@ -1,0 +1,16 @@
+- [ ] Cambiar la monigota (Ángel con PixelArt)
+- [ ] Darle movimiento
+- [ ] Tecla shift = Correr
+- [X] Mobs
+- [ ] Fondo
+- [ ] corazones
+- [ ] sistema de deteccion
+- [ ] zombie.esqueleto
+- [ ] arma,espada,arco,acha
+- [X] zombie,esquleto ballan acia la muñeca
+- [ ] menu principal
+- [ ] tecla u que juegen al uno
+- [ ] tecla v que juegen al virus
+- [ ] tecla p  que juegen al piedra papel o tijera
+  - [ ] si ganas te dan dos doblones de oro
+- [ ] colgar en internet
